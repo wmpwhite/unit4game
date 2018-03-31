@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+
+    
+        <div class="game-title">
+            <h1>The Crystal Game</h1>
+        </div>
+        <div id="instructions">
+            <p>Instructions:</p>
+            <br>
+            <p>1. The computer will randomly generate a number between 20 and 120 for your target. </p> 
+            <br>
+            <p>2. The computer will randomly assign a value between 1 and 12 to each crystal. New values will be generated for each new game.</p>
+            <br>
+            <p>3. You will not know the value of each crystal until you click on it and see the incremental increase in your total. Each time you click on a crystal, your total will be increased by the value of that crystal.</p>
+            <br>
+            <p>4. To win, you must find a combination of the crystals' values which add to exactly the target value.  You lose when you exceed the target value.</p>
+        </div>
+        <div class="box">
+            <h3>Your Target:</h3>
+            <br>
+            <h3><span id="target-number"></span></h3>        
+        </div>
+        <div class="box">
+            <h3>Your Total So Far:</h3>
+            <br>
+            <h3><span id="player-total"></span></h3>            
+        </div>
+        <div>
+            <p class="crystals" id="c-1">1</p>
+            <p class="crystals" id="c-2">2</p>
+            <p class="crystals" id="c-3">3</p>
+            <p class="crystals" id="c-4">4</p>        
+        </div>
+
+    </div>
+
+    <div class="wins-losses">
+        <h3>Wins: <span id="player-wins"></span></h3>
+        <br>
+        <h3>Losses:  <span id="player-losses"></span></h3>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
     
 </body>
 </html>
