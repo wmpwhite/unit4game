@@ -12,6 +12,9 @@ body {
     width: 980px;
     background-color: beige;
     margin-left: 258px;
+    margin-right: 0px;
+    border: 2px;
+    border-style: solid;
 }
 
 .game-title {
@@ -27,15 +30,18 @@ body {
 }
 
 .box {
+    float: left;
+    width: 200px;
     font-size: 22px;
     padding: 10px;
     text-align: center;
-    margin-left: 375px;
-    margin-right: 375px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: beige;
 }
 
 .crystals {
@@ -51,14 +57,17 @@ body {
     background-color: aliceblue;
 }
 
-.wins-losses {
-    float: left;
-    font-size: 22px;
-    padding: 10px;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    border-style: solid;
-    border-width: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#c-1 {
+    clear: left;
+    margin-left: 335px;
+}
+
+#wins-losses { 
+    margin-right: 25px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+#target-box {
+    margin-left: 110px;
 }

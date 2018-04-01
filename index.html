@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Document</title>
@@ -18,15 +19,15 @@
         <div id="instructions">
             <p>Instructions:</p>
             <br>
-            <p>1. The computer will randomly generate a number between 20 and 120 for your target. </p> 
+            <p>1. At the start of the game, the computer will randomly generate a number between 20 and 120 for your target. It will also randomly assign a value between 1 and 12 to each crystal. New values will be generated for each new game.</p>
             <br>
-            <p>2. The computer will randomly assign a value between 1 and 12 to each crystal. New values will be generated for each new game.</p>
+            <p>2. You will not know the value of each crystal until you click on it and see the incremental increase in your total. Each time you click on a crystal, your total will be increased by the value of that crystal.</p>
             <br>
-            <p>3. You will not know the value of each crystal until you click on it and see the incremental increase in your total. Each time you click on a crystal, your total will be increased by the value of that crystal.</p>
+            <p>3. To win, you must find a combination of the crystals' values which add to exactly the target value.  You lose when you exceed the target value.</p>
             <br>
-            <p>4. To win, you must find a combination of the crystals' values which add to exactly the target value.  You lose when you exceed the target value.</p>
+            <br>
         </div>
-        <div class="box">
+        <div class="box" id="target-box">
             <h3>Your Target:</h3>
             <br>
             <h3><span id="target-number"></span></h3>        
@@ -36,25 +37,30 @@
             <br>
             <h3><span id="player-total"></span></h3>            
         </div>
-        <div>
-            <p class="crystals" id="c-1">1</p>
-            <p class="crystals" id="c-2">2</p>
-            <p class="crystals" id="c-3">3</p>
-            <p class="crystals" id="c-4">4</p>        
-        </div>
-
+        <div class="box" id="wins-losses">
+            <h3>Wins: <span id="player-wins"></span></h3>
+            <br>
+            <h3>Losses:  <span id="player-losses"></span></h3>   
+        </div>    
+    </div>
+    
+    
+    <div>
+        <img class="crystals" id="c-1" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals1">
+        <img class="crystals" id="c-2" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals2">
+        <img class="crystals" id="c-3" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals3">
+        <img class="crystals" id="c-4" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals4">        
     </div>
 
-    <div class="wins-losses">
-        <h3>Wins: <span id="player-wins"></span></h3>
-        <br>
-        <h3>Losses:  <span id="player-losses"></span></h3>
+    
 
-    </div>
+    
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="assets/javascript/game.js"></script>
     
 </body>
 </html>
+
+

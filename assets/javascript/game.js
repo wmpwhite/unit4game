@@ -40,6 +40,8 @@ $(document).ready(function() {
         console.log(crystalValue[1]);
         console.log(crystalValue[2]);
         console.log(crystalValue[3]);
+        console.log("--------------");
+        console.log(playerTotal);
 
 
 
@@ -47,12 +49,16 @@ $(document).ready(function() {
 
         $("body").on("click", "#c-1", function() {
             playerTotal = playerTotal + crystalValue[0];
+            console.log(playerTotal);
         }).on("click", "#c-2", function() {
             playerTotal = playerTotal + crystalValue[1];
+            console.log(playerTotal);
         }).on("click", "#c-3", function() {
             playerTotal = playerTotal + crystalValue[2];
+            console.log(playerTotal);            
         }).on("click", "#c-4", function() {
             playerTotal = playerTotal + crystalValue[3];
+            console.log(playerTotal);
         });
 
         document.querySelector("#player-total").innerHTML = playerTotal;
@@ -64,12 +70,13 @@ $(document).ready(function() {
         } 
             else if (playerTotal > targetValue) {
             losses++;
+            console.log(losses)
             document.querySelector("#player-losses").innerHTML = losses;
             alert("Sorry, you lost.");
         }
     }
 
-playGame();
+     playGame();
 
 });
 
