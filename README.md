@@ -1,1 +1,3 @@
 # unit4game
+
+Game seems to work as planned.  The one thing I wanted to do but ran out of time on was logic to check the random values of crystals to force four different values for four crystals.  The random generator yields duplicates with regularity and it seems like that shouldn't be the case for the game's sake.  I thought about it some but I could not devise logic that would not be very convoluted.  There is probably an elegant solution, but it did not present itself to me.
