@@ -32,6 +32,7 @@ body {
 .box {
     float: left;
     width: 200px;
+    height: 88px;
     font-size: 22px;
     padding: 10px;
     text-align: center;
