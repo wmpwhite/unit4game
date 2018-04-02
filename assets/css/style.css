@@ -16,19 +16,19 @@ body {
     border: 2px;
     border-style: solid;
 }
-
+/* styling added to page header */
 .game-title {
     font-size: 40px;
     padding: 10px;
     text-align: center;
 }
-
+/* margins added to move paragaphs away from container edges */
 #instructions {
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 10px;
 }
-
+/* styling for boxes that display target value, player's running total, and wins & losses */
 .box {
     float: left;
     width: 200px;
@@ -44,7 +44,7 @@ body {
     margin-bottom: 10px;
     background-color: beige;
 }
-
+/* styling for boxes displayed as crystals */
 .crystals {
     
     width: 150px;
@@ -57,18 +57,18 @@ body {
     float: left;
     background-color: aliceblue;
 }
-
+/* styling for left-most crystal box so that it clears the row of boxes above it and starts a new row */
 #c-1 {
     clear: left;
     margin-left: 335px;
 }
-
+/* text-align and padding adjusted to situate text within box */
 #wins-losses { 
     margin-right: 25px;
     padding-left: 40px;
     text-align: left;
 }
-
+/* margin added to align row on the screen */
 #target-box {
     margin-left: 110px;
 }
